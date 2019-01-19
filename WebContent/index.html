@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
+
 <head>
-<meta charset="UTF-8">
-<title>Auriga</title>
+	<meta charset="UTF-8">
+
+	<title>Auriga</title>
+
+	<!-- Todos os scripts aqui -->
+	
+	<!-- Libs externas -->
+	<script type="text/javascript" src="assets/lib/angular.js"></script>
+	<script type="text/javascript" src="assets/lib/angular-route.js"></script>
+
+	<!-- Configuracoes do aplicativo -->
+	<script type="text/javascript" src="app/app.module.js"></script>
+	<script type="text/javascript" src="app/route.config.js"></script>
+
+	<!-- Controllers -->
+	<script type="text/javascript" src="app/components/home/homeController.js"></script>
+
 </head>
-<body>
 
-Mensagem do Auriga
+<body ng-view></body>
 
-</body>
 </html>
